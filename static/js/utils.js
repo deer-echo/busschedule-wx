@@ -83,7 +83,6 @@ function place2number (place) {
     "江湾": 1,
     "枫林": 2,
     "张江": 3,
-    "上科大": 4
   };
 
   return f[place];

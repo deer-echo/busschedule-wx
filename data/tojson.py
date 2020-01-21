@@ -70,11 +70,7 @@ def tojson(filename):
         },
         "zhangjiang": {
             "handan": [],
-            "fenglin": [],
-            "stu": []
-        },
-        "stu": {
-            "zhangjiang": []
+            "fenglin": []
         }
     }
 

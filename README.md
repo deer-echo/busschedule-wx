@@ -47,7 +47,7 @@ npm install --save wx-server-sdk@latest
 python data/tojson.py
 ```
 
-* Replace the timetable json variable in `data/timetable.js` with the new one
+* Replace the timetable json variable in `static/js/timetable.js` with the new one
 
 ## Reference
 
