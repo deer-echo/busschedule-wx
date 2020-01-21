@@ -25,7 +25,7 @@
   </view>
 
   <view class="footer">
-    <image src="../../../../data/github.png" class="footer-img"></image>
+    <image src="../../../../static/pic/github.png" class="footer-img"></image>
     <text class="footer-text">czhongyu</text>
   </view>
 
