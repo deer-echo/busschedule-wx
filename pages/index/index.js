@@ -7,8 +7,8 @@ var timeTable = require("../../static/js/timetable.js").data;
 var location = require("../../static/js/location.js").data;
 var pyName = require("../../static/js/pyname.js").data;
 
-//util
-var util = require("../../static/js/utils.js");
+//utils
+var utils = require("../../static/js/utils.js");
 
 //build the page
 Page({
@@ -65,7 +65,7 @@ Page({
     // update timelist
     data.timeList = timeTable[pyName[data.multiArray[0][data.multiIndex[0]]]][pyName[data.multiArray[1][data.multiIndex[1]]]][pyName[data.multiArray[2][data.multiIndex[2]]]];
 
-    let result = util.update_next(data.timeList);
+    let result = utils.update_next(data.timeList);
     data.departTime = result.departTime;
     data.destinTime = result.destinTime;
 
@@ -175,7 +175,7 @@ Page({
     }
 
     // basic update
-    let week = util.getDayofweek();
+    let week = utils.getDayofweek();
     let pickerWeek;
     let multiIndex = this.data.multiIndex;
     if (week == "周六" || week == "周日") {
@@ -186,7 +186,7 @@ Page({
       multiIndex[0] = 0;
     }
     let timeList = timeTable[pyName[pickerWeek]][pyName[this.data.pickerDepart]][pyName[this.data.pickerDestin]];
-    let result = util.update_next(timeList);
+    let result = utils.update_next(timeList);
     this.setData({
       week: week,
       pickerWeek: pickerWeek,
@@ -219,7 +219,7 @@ Page({
             // user route available
             // load user timetable
             let mythis = this;
-            let data = util.get_route_data(mythis, myres)
+            let data = utils.get_route_data(mythis, myres)
 
             this.setData(data);
           }
@@ -238,7 +238,7 @@ Page({
         // user route available
         // load user timetable
         let mythis = this;
-        let data = util.get_route_data(mythis, res)
+        let data = utils.get_route_data(mythis, res)
 
         this.setData(data);
       }
