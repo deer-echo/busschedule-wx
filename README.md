@@ -10,11 +10,11 @@ Bus schedule of Fudan University hosted on __WeChat Mini Program__
 capable of detecting current day of week and loading user's personal route when launching the app, 
 with a picker for choosing day of week, starting point and destination.
 
-![ercode](files/ercode.png)
+![ercode](static/meadme/ercode.png)
 
 ## Screen Shot
 
-![screen shot](files/screenshot.jpg)
+![screen shot](static/meadme/screenshot.jpg)
 
 ## Features
 
@@ -41,10 +41,10 @@ npm install --save wx-server-sdk@latest
 
 ## Generate Timetable JSON File
 
-* Modify `INPUT_CSV` and `OUTPUT_JSON` in `files/tojson.py`
+* Modify `INPUT_CSV` and `OUTPUT_JSON` in `data/tojson.py`
 * Generate timetable json file:
 ```
-python files/tojson.py
+python data/tojson.py
 ```
 
 * Replace the timetable json variable in `data/timetable.js` with the new one
